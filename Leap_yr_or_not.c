@@ -1,19 +1,15 @@
 #include<stdio.h>
 int main() 
 { 
-   int a,b; 
-   scanf("%d%d",&a,&b);
-   if(a>b) 
+   int yr; 
+   scanf("%d",&yr);
+   if(yr%4==0 && yr%100!=0 || yr%400==0) 
    {
-      printf("%d is the largest number than %d",a,b);
-   } 
-   else if(b>a) 
-   {     
-      printf("%d is the largest number than %d",b,a); 
-   } 
+      printf("%d is a leap year",yr);
+   }
    else 
    { 
-      printf("They are equal");
+      printf("%d is not a leap year",yr);
    } 
    return 0;
 }
