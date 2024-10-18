@@ -10,7 +10,7 @@ int main()
     {
         scanf("%d",&num[i]);
     }
-      int even,odd;
+      int even=0,odd=0;
     for(i=0;i<n;i++)
     {
         if(num[i]%2==0)
