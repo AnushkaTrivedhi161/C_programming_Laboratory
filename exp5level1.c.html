@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    char a[50];
+    scanf("%s",a);
+    int i=0,u=0,d=0,l=0,sc=0;
+    while(a[i]!='\0')
+    {
+        if(a[i]>='a' && a[i]<='z')
+        {
+            u++;
+        }
+        if(a[i]>='A' && a[i]<='Z')
+        {
+            l++;
+        }
+        if(a[i]>='0' && a[i]<='9')
+        {
+            d++;
+        }
+        else
+        {
+            sc++;
+        }
+        i++;
+    }
+       if(i>8 && u>=1 && l>=1 && d>=1 && sc>=1)
+       {
+           printf("valid");
+       }
+       else
+       {
+           printf("not valid");
+       }
+    return 0;   
+}
+
+
+
+
